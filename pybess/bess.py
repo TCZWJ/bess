@@ -54,6 +54,8 @@ for extra in ('builtin_pb', 'plugin_pb'):
         sys.path.insert(1, p)
 del extra, p
 
+#在pybess/builtin目录中的xxx_pb2.py文件来源：
+#输入protoc --python_out=. xxxx.proto，成功后会发现在该目录下出现了xxxx_pb2.py文件
 from .builtin_pb import service_pb2_grpc
 from .builtin_pb import bess_msg_pb2 as bess_msg
 from .builtin_pb import module_msg_pb2 as module_msg
