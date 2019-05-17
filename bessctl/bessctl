@@ -146,6 +146,7 @@ class BESSCLI(cli.CLI):
 
 def run_cli(instream=sys.stdin):
     s = BESS()
+    #commands.cmdlist 是commands.py中的命令列表，如果在此print(commands.cmdlist)将会看到所有命令以及命令对应的地址
     cli = BESSCLI(s, commands, fin=instream)
 
     try:
