@@ -431,6 +431,7 @@ class CLI(object):
 
         line = line.strip()
 
+        #line 为终端用户在bessctl中的输入命令，如help、quit等
         if line:
             self.last_cmd = line
             try:
